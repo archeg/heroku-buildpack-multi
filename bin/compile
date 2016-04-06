@@ -80,7 +80,7 @@ fi
 printenv
 
 echo Chmoding java
-chmod +x "$JAVA_HOME/open_jdk_jre/bin/java"
+chmod +x "$JAVA_HOME/bin/java"
 # echo Tree:
 # ls -R /tmp/staged/app/.java-buildpack/open_jdk_jre
 echo -----------------------
