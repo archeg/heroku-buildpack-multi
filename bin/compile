@@ -80,7 +80,13 @@ fi
 printenv
 
 echo Chmoding java
+echo "$JAVA_HOME"
+[[ -n "$JAVA_HOME" ]] && echo "Java_Home found"
+[[ -x "$JAVA_HOME/bin/java" ]] && echo "Java_Home_bin found"
 chmod +x "$JAVA_HOME/bin/java"
+echo "$JAVA_HOME"
+[[ -n "$JAVA_HOME" ]] && echo "Java_Home found"
+[[ -x "$JAVA_HOME/bin/java" ]] && echo "Java_Home_bin found"
 # echo Tree:
 # ls -R /tmp/staged/app/.java-buildpack/open_jdk_jre
 echo -----------------------
