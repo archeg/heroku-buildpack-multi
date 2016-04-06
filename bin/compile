@@ -80,5 +80,5 @@ fi
 printenv
 
 echo Tree:
-find ~ -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+find / -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
 echo -----------------------
