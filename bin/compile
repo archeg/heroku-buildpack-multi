@@ -80,5 +80,5 @@ fi
 printenv
 
 echo Tree:
-find / -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+ls -R /tmp/staged/app/.java-buildpack/open_jdk_jre
 echo -----------------------
