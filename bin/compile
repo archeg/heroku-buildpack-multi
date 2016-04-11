@@ -44,10 +44,11 @@ for BUILDPACK in $(cat $1/.buildpacks); do
       git checkout $branch >/dev/null 2>&1
     fi
 
-    ls -a $dir/bin/
     
     # we'll get errors later if these are needed and don't exist
     chmod -f +x $dir/bin/{detect,compile,release} || true
+
+    ls -la $dir/bin/
 
     echo "[DEBUG] chmod done"
 
