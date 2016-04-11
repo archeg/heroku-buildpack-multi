@@ -24,7 +24,7 @@ for BUILDPACK in $(cat $1/.buildpacks); do
   fi
 
   if [ "$url" != "" ]; then
-    echo "=====> Downloading Buildpack: $url"
+    echo "=====> Downloading Buildpack: $url [dir: $1]"
 
     if [[ "$url" =~ \.tgz$ ]]; then
       mkdir -p "$dir"
