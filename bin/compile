@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -e
+set -e
 
 function indent() {
   c='s/^/       /'
@@ -48,9 +48,9 @@ for BUILDPACK in $(cat $1/.buildpacks); do
     # we'll get errors later if these are needed and don't exist
     chmod -f +x $dir/bin/{detect,compile,release} || true
 
-    ls -la $dir/bin/
-    echo ------------------------
-    ls -la $1
+    #ls -la $dir/bin/
+    #echo ------------------------
+    #ls -la $1
 
     echo "[DEBUG] chmod done"
 
