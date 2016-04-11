@@ -49,6 +49,8 @@ for BUILDPACK in $(cat $1/.buildpacks); do
     chmod -f +x $dir/bin/{detect,compile,release} || true
 
     ls -la $dir/bin/
+    echo ------------------------
+    ls -la $1
 
     echo "[DEBUG] chmod done"
 
